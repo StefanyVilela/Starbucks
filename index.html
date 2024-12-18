@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    <div class="bola"></div>
+
+    <img src="./img/logo.png" alt="logo starbucks" class="logo">
+
+    <div class="conteudo">
+
+        <div class="texto">
+            <h2> Não é apenas café, é um <span>Starbucks</span> </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo.
+                consequat. Duis aute irure dolor in reprehenderit </p>
+
+            <button> Deixe seu LIKE </button>
+        </div>
+
+        <div class="imagem">
+            <img src="./img/img1.png" alt="copão" class="copão">
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <img src="./img/img-pequena1.png" class="copinho verde">
+        <img src="./img/img-pequena2.png" class="copinho rosinha">
+        <img src="./img/img-pequena3.png" class="copinho rosa">
+    </div>
+
+</body>
+
+<script>
+    let bola = document.querySelector(".bola")
+
+    let imgCopo = document.querySelector(".copão")
+
+    let verde = document.querySelector(".verde")
+    let rosinha = document.querySelector(".rosinha")
+    let rosa = document.querySelector(".rosa")
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./img/img1.png"
+        bola.style.background = "#017143"
+    })
+
+    rosinha.addEventListener("click", () => {
+        imgCopo.src = "./img/img2.png"
+        bola.style.background = "#eb7495"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./img/img3.png"
+        bola.style.background = "#d752b1"
+    })
+
+
+
+
+</script>
+
+</html>
